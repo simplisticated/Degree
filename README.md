@@ -7,10 +7,10 @@
 		<img src="https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat">
 	</a>
 	<a href="https://cocoapods.org">
-		<img src="https://img.shields.io/cocoapods/v/Hammer.svg">
+		<img src="https://img.shields.io/cocoapods/v/Degree.svg">
 	</a>
 	<a href="https://cocoapods.org">
-		<img src="https://img.shields.io/cocoapods/dt/Hammer.svg">
+		<img src="https://img.shields.io/cocoapods/dt/Degree.svg">
 	</a>
 	<a href="https://tldrlegal.com/license/mit-license">
 		<img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat">
@@ -34,6 +34,23 @@ or
 * iOS 9 and later
 * Xcode 9 and later
 * Swift 4
+
+## Usage
+
+Example of usage:
+
+```swift
+let gradientView = GradientView()
+gradientView.gradient = Gradient.make
+    .from(.topLeft)
+    .to(.bottomRight)
+    .step(withColor: .white, andLocation: 0.0)
+    .step(withColor: .orange, andLocation: 0.5)
+    .step(withColor: .purple, andLocation: 1.0)
+    .get
+```
+
+Each step is defined by its color and location, which is a `Float` value from `0.0` to `1.0`.
 
 ## License
 
