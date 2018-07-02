@@ -22,31 +22,6 @@ public struct Gradient {
 
 public extension Gradient {
     
-    public static func smooth(from startPoint: GradientPoint, to endPoint: GradientPoint, colors: [UIColor]) -> Gradient {
-        var steps = [GradientStep]()
-        let stepSize = 1.0 / Float(colors.count + 1)
-        
-        for i in 0..<colors.count {
-            let color = colors[i]
-            let location = stepSize * Float(i + 1)
-            let step = GradientStep(
-                color: color,
-                location: location
-            )
-            steps.append(step)
-        }
-        
-        return Gradient(
-            startPoint: startPoint,
-            endPoint: endPoint,
-            steps: steps
-        )
-    }
-    
-}
-
-public extension Gradient {
-    
     public class Builder {
         
         fileprivate var startPoint: GradientPoint
@@ -96,9 +71,73 @@ public extension Gradient {
 
 public extension Gradient {
     
+    public class SmoothBuilder {
+        
+        fileprivate var startPoint: GradientPoint
+        
+        fileprivate var endPoint: GradientPoint
+        
+        fileprivate var colors: [UIColor]!
+        
+        public var get: Gradient {
+            get {
+                var steps = [GradientStep]()
+                let stepSize = 1.0 / Float(self.colors.count + 1)
+                
+                for i in 0..<self.colors.count {
+                    let color = self.colors[i]
+                    let location = stepSize * Float(i + 1)
+                    let step = GradientStep(
+                        color: color,
+                        location: location
+                    )
+                    steps.append(step)
+                }
+                
+                return Gradient(
+                    startPoint: self.startPoint,
+                    endPoint: self.endPoint,
+                    steps: steps
+                )
+            }
+        }
+        
+        fileprivate init() {
+            self.startPoint = .topLeft
+            self.endPoint = .bottomRight
+            self.colors = []
+        }
+        
+        public func from(_ point: GradientPoint) -> Self {
+            self.startPoint = point
+            return self
+        }
+        
+        public func to(_ point: GradientPoint) -> Self {
+            self.endPoint = point
+            return self
+        }
+        
+        public func step(withColor color: UIColor) -> Self {
+            self.colors.append(color)
+            return self
+        }
+        
+    }
+    
+}
+
+public extension Gradient {
+    
     public static var make: Builder {
         get {
             return Builder()
+        }
+    }
+    
+    public static var makeSmooth: SmoothBuilder {
+        get {
+            return SmoothBuilder()
         }
     }
     
