@@ -22,6 +22,31 @@ public struct Gradient {
 
 public extension Gradient {
     
+    public static func smooth(from startPoint: GradientPoint, to endPoint: GradientPoint, colors: [UIColor]) -> Gradient {
+        var steps = [GradientStep]()
+        let stepSize = 1.0 / Float(colors.count + 1)
+        
+        for i in 0..<colors.count {
+            let color = colors[i]
+            let location = stepSize * Float(i + 1)
+            let step = GradientStep(
+                color: color,
+                location: location
+            )
+            steps.append(step)
+        }
+        
+        return Gradient(
+            startPoint: startPoint,
+            endPoint: endPoint,
+            steps: steps
+        )
+    }
+    
+}
+
+public extension Gradient {
+    
     public class Builder {
         
         fileprivate var startPoint: GradientPoint
