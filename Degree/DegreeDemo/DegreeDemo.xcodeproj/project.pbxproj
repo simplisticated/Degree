@@ -35,7 +35,7 @@
 		690509ED20DC1323004CAD29 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		690509EE20DC1323004CAD29 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		690509F120DC13A3004CAD29 /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		69050A1420DC1500004CAD29 /* Degree.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Degree.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/Degree-epslmupenocnhxfbyznufkocvbkd/Build/Products/Debug-iphoneos/Degree.framework"; sourceTree = "<group>"; };
+		69A9AE4820EABAC4007F103B /* Degree.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Degree.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/Degree-epslmupenocnhxfbyznufkocvbkd/Build/Products/Debug-iphoneos/Degree.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 		69050A0F20DC14EA004CAD29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				69050A1420DC1500004CAD29 /* Degree.framework */,
+				69A9AE4820EABAC4007F103B /* Degree.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
