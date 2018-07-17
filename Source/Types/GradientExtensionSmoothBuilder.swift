@@ -63,8 +63,8 @@ public extension Gradient {
             return self
         }
         
-        public func step(withColor color: UIColor) -> Self {
-            self.colors.append(color)
+        public func color(_ value: UIColor) -> Self {
+            self.colors.append(value)
             return self
         }
         
