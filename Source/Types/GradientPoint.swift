@@ -23,55 +23,6 @@ public struct GradientPoint {
     }
 }
 
-public extension GradientPoint {
-    
-    static var topLeft: GradientPoint {
-        get {
-            return GradientPoint(
-                x: 0.0,
-                y: 0.0
-            )
-        }
-    }
-    
-    static var topRight: GradientPoint {
-        get {
-            return GradientPoint(
-                x: 1.0,
-                y: 0.0
-            )
-        }
-    }
-    
-    static var bottomLeft: GradientPoint {
-        get {
-            return GradientPoint(
-                x: 0.0,
-                y: 1.0
-            )
-        }
-    }
-    
-    static var bottomRight: GradientPoint {
-        get {
-            return GradientPoint(
-                x: 1.0,
-                y: 1.0
-            )
-        }
-    }
-    
-    static var center: GradientPoint {
-        get {
-            return GradientPoint(
-                x: 0.5,
-                y: 0.5
-            )
-        }
-    }
-    
-}
-
 internal extension GradientPoint {
     
     internal var cgPoint: CGPoint {
