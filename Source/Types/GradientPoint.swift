@@ -16,6 +16,11 @@ public struct GradientPoint {
         self.x = x
         self.y = y
     }
+    
+    public init(x: GradientPointX, y: GradientPointY) {
+        self.x = x.floatValue
+        self.y = y.floatValue
+    }
 }
 
 public extension GradientPoint {
