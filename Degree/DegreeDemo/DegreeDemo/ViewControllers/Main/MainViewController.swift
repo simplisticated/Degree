@@ -38,16 +38,12 @@ class MainViewController: UIViewController {
         let gradientView = self.view as! GradientView
         gradientView.gradient = Gradient.make
             .from(
-                GradientPoint(
-                    x: .center,
-                    y: .top
-                )
+                x: .center,
+                y: .top
             )
             .to(
-                GradientPoint(
-                    x: .center,
-                    y: .bottom
-                )
+                x: .center,
+                y: .bottom
             )
             .step(withColor: .white, andLocation: 0.0)
             .step(withColor: .orange, andLocation: 0.5)
