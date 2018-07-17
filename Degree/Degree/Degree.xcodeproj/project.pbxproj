@@ -14,6 +14,9 @@
 		69050A1820DC2088004CAD29 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69050A1720DC2088004CAD29 /* Gradient.swift */; };
 		69A9AE4A20EABEE6007F103B /* GradientPointX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A9AE4920EABEE6007F103B /* GradientPointX.swift */; };
 		69FF0CAC20FDAED9003D4A83 /* GradientPointY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FF0CAB20FDAED9003D4A83 /* GradientPointY.swift */; };
+		69FF0CAE20FE700C003D4A83 /* GradientExtensionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FF0CAD20FE700C003D4A83 /* GradientExtensionBuilder.swift */; };
+		69FF0CB020FE7082003D4A83 /* GradientExtensionSmoothBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FF0CAF20FE7082003D4A83 /* GradientExtensionSmoothBuilder.swift */; };
+		69FF0CB220FE70C0003D4A83 /* GradientExtensionConstructors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FF0CB120FE70C0003D4A83 /* GradientExtensionConstructors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		69050A1720DC2088004CAD29 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		69A9AE4920EABEE6007F103B /* GradientPointX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientPointX.swift; sourceTree = "<group>"; };
 		69FF0CAB20FDAED9003D4A83 /* GradientPointY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientPointY.swift; sourceTree = "<group>"; };
+		69FF0CAD20FE700C003D4A83 /* GradientExtensionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientExtensionBuilder.swift; sourceTree = "<group>"; };
+		69FF0CAF20FE7082003D4A83 /* GradientExtensionSmoothBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientExtensionSmoothBuilder.swift; sourceTree = "<group>"; };
+		69FF0CB120FE70C0003D4A83 /* GradientExtensionConstructors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientExtensionConstructors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,9 @@
 				69050A1520DC1DCC004CAD29 /* GradientPoint.swift */,
 				69050A0D20DC144F004CAD29 /* GradientStep.swift */,
 				69050A1720DC2088004CAD29 /* Gradient.swift */,
+				69FF0CAD20FE700C003D4A83 /* GradientExtensionBuilder.swift */,
+				69FF0CAF20FE7082003D4A83 /* GradientExtensionSmoothBuilder.swift */,
+				69FF0CB120FE70C0003D4A83 /* GradientExtensionConstructors.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -175,7 +184,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				69FF0CAC20FDAED9003D4A83 /* GradientPointY.swift in Sources */,
+				69FF0CAE20FE700C003D4A83 /* GradientExtensionBuilder.swift in Sources */,
+				69FF0CB220FE70C0003D4A83 /* GradientExtensionConstructors.swift in Sources */,
 				69050A0B20DC141A004CAD29 /* GradientView.swift in Sources */,
+				69FF0CB020FE7082003D4A83 /* GradientExtensionSmoothBuilder.swift in Sources */,
 				69050A0E20DC144F004CAD29 /* GradientStep.swift in Sources */,
 				69050A1620DC1DCC004CAD29 /* GradientPoint.swift in Sources */,
 				69A9AE4A20EABEE6007F103B /* GradientPointX.swift in Sources */,
