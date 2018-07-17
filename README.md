@@ -42,8 +42,14 @@ Example of usage:
 ```swift
 let gradientView = GradientView()
 gradientView.gradient = Gradient.make
-    .from(.topLeft)
-    .to(.bottomRight)
+    .from(
+        x: .left,
+        y: .top
+    )
+    .to(
+        x: .right,
+        y: .bottom
+    )
     .step(withColor: .white, andLocation: 0.0)
     .step(withColor: .orange, andLocation: 0.5)
     .step(withColor: .purple, andLocation: 1.0)
